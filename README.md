@@ -1,17 +1,17 @@
-# Percentile [![Build Status](https://travis-ci.org/msn0/stats-percentile.svg?branch=master)](http://travis-ci.org/msn0/stats-percentile)
+# Percentile [![Build Status](https://travis-ci.org/elstats/percentile.svg?branch=master)](http://travis-ci.org/elstats/percentile)
 
 > Calculate n-th percentile
 
 ## Installation
 
 ```sh
-npm install stats-percentile
+npm install @elstats/percentile
 ```
 
 ## Example 1
 
 ```js
-import percentile from 'stats-percentile';
+import percentile from '@elstats/percentile';
 
 const data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
 
@@ -22,7 +22,7 @@ percentile(data, 75); // → 15
 ## Example 2
 
 ```js
-const percentile = require('stats-percentile');
+const percentile = require('@esltats/percentile');
 
 function p95() {
     return data => percentile(data, 95);
