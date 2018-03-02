@@ -13,10 +13,11 @@ npm install @elstats/percentile
 ```js
 import percentile from '@elstats/percentile';
 
-const data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
-
 // calculate p75
-percentile(data, 75); // → 15
+percentile(
+    [3, 6, 7, 8, 8, 10, 13, 15, 16, 20],
+    75
+); // → 15
 ```
 
 ## Example 2
