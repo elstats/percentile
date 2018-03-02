@@ -2,12 +2,13 @@
   "name": "@elstats/percentile",
   "version": "3.2.0",
   "description": "Calculate n-th percentile",
-  "main": "index.js",
+  "main": "/dist/index.js",
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "ava --verbose && eslint --fix ."
+    "test": "ava --verbose && eslint --fix .",
+    "prepare": "npm t && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,13 @@
   "homepage": "https://github.com/elstats/percentile",
   "devDependencies": {
     "ava": "^0.25.0",
-    "eslint-config-helmut": "^3.0.0"
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babelrc-rollup": "^3.0.0",
+    "eslint-config-helmut": "^3.0.0",
+    "rollup": "^0.56.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0"
   }
 }
