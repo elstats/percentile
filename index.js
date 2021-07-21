@@ -35,5 +35,5 @@ function findK(data, start, end, k) {
 // Calculate n-th percentile of 'data' using Nearest Rank Method
 // http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method
 export default function (data, n) {
-    return findK(data.concat(), 0, data.length, Math.ceil(data.length * n / 100) - 1);
+    return findK(data.slice(), 0, data.length, Math.ceil(data.length * n / 100) - 1);
 }
